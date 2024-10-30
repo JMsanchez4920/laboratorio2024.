@@ -25,7 +25,44 @@ justify-content: space-between;
     justify-content:center;
     height: 60px;
     color: #ffffff;
+    background-color: #3c5f93;
 } 
+
+.purple-banner svg {
+  margin-right: 10px; 
+}
+
+.header.logo img{
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+
+
+.navbar{
+  list-style: none;
+}
+
+.navbar li{
+  display: inline-block;
+  padding: 0 20px;
+
+}
+
+.navbar li:hover{
+  transform: scale(1.2);
+}
+
+.navbar a{
+  font-size: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  color: #d31717
+}
 
 nav ul {
 list-style: none;
@@ -36,15 +73,13 @@ nav li {
 margin: 0 20px;
 }
     
-nav a {
-text-decoration: none;
-color: #ffffff;
-}
+
+
 
 }
 body {
     font-family:  'Poppins', sans-serif;
-    background-color: #3c5f99;
+    background-color: #ffffff;
 }
 
 header {
@@ -61,6 +96,15 @@ header img {
     width: 200px;
 }
 
+
+
+ header img:hover{ /*brillito de logo*/
+  transition:  all 0.2s ease;
+  filter: brightness(130%)
+
+}
+
+
 h1 p{
     margin-left: 30px;
     margin-bottom: 5%; 
@@ -71,6 +115,7 @@ h1 p{
     max-width: 3px;
     line-height: 1;
 }
+
 header {
   background-color: #ffff; 
   padding: 40px;
@@ -174,43 +219,66 @@ h2{ /*tamaño de banner*/
   /*logo de planes y horarios*/
 
 .imagen-texto {
-    float: left; /* O float: right; si prefieres que la imagen esté a la derecha */
-    margin-right: 30px; /* Espacio entre las imágenes */
+    float: left; 
+    margin-right: 30px; 
     align-items: center;
 }
 
 .container {
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
+    justify-content: center; 
   }
   
   .imagen-texto {
-    text-align: center; /* Centra el texto dentro de cada elemento */
-    margin: 30px; /* Añade un margen para separar los elementos */
+    text-align: center; 
+    margin: 30px; 
   }
   
   .imagen-texto img {
-    max-width: 80px; /* Asegura que la imagen no se desborde */
+    max-width: 80px; 
     height: 0% auto;
   }
   
   .imagen-texto p {
     font-family: 'raleway', sans-serif; 
-    font-size: 15px; /* Ajusta el tamaño de la fuente */
+    font-size: 15px; 
     letter-spacing: 0.1px;
     line-height: 2;
-    color: #f0f0f0;
+    color: #000000;
   }
 
   .imagen-texto h2{
     font-family: 'raleway', sans-serif; 
-    font-size: 20px; /* Ajusta el tamaño de la fuente */
+    font-size: 20px; 
     letter-spacing: 0.1px;
     line-height: 2;
-    color: #f0f0f0;
+    color: #eb3434;
   }
 
-  .footer-txt {
-    text-align: center; /* Centrar el texto del footer */
-    color: #333; /* Color del texto */
-  }
+footer {
+    background-color: #3c5f93; 
+    padding: 20px 0; 
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px; 
+    gap: 5px; 
+}
+
+.footer-column {
+    flex: 1; 
+    text-align: center;
+    margin: 0; 
+    padding: 0; 
+}
+
+footer p {
+    font-family: 'raleway', sans-serif; 
+    color: #040404; 
+    letter-spacing: 0.1px;
+}
+
